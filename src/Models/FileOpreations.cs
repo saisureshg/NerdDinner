@@ -1,3 +1,7 @@
+using System.IO;
+using System.Web;
+
+
 public class LocalFileClient : IFileClient
 {
     private string _fileRoot;
