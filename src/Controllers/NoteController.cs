@@ -6,6 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Amazon.S3; 
+using Amazon.S3.models; 
 using Steeltoe.Common.Net;
 
 namespace NetFrameworkApp.Controllers
