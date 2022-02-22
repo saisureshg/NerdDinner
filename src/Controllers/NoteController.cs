@@ -20,7 +20,7 @@ namespace NetFrameworkApp.Controllers
 
             using (var share = new WindowsNetworkFileShare(configuration.GetSharePath(), credential))
             using (var inputStream = new FileStream(Path.Combine(configuration.GetSharePath(), "note.txt"), FileMode.OpenOrCreate))
-            using (var streamReader = new StreamReader(inputStream))
+            using (var streamReader = new AWSS3BucketName(Name))
             {
         // Never display raw user input as HTML. Do not do this in production code.
                 ViewBag.Note = streamReader.ReadToEnd();
